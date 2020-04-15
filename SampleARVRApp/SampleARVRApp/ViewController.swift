@@ -8,10 +8,18 @@
 
 import UIKit
 import ARKit
+import Photos
 
 class ViewController: UIViewController {
+    
     //MARK: - IBOutlets
     @IBOutlet weak var sceneView: ARSCNView!
+    
+    //MARK: - IBActions
+    @IBAction func capureImage(_ sender: Any) {
+        try? PHPhotoLibrary.shared().performChangesAndWait {
+              PHAssetChangeRequest.creationRequestForAsset(from: self.sceneView.snapshot())}
+    }
     
     //MARK: - Variables
     private let configuration = ARWorldTrackingConfiguration()

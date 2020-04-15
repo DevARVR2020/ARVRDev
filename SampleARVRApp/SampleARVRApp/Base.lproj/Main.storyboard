@@ -16,15 +16,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cm6-tv-yPi">
-                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <rect key="frame" x="10" y="54" width="394" height="743"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHt-V7-rAA">
+                                <rect key="frame" x="10" y="822" width="394" height="30"/>
+                                <state key="normal" title="Capture Image"/>
+                                <connections>
+                                    <action selector="capureImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JW-yC-GhR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cm6-tv-yPi" secondAttribute="trailing" constant="10" id="CiK-Y6-mTB"/>
                             <constraint firstItem="cm6-tv-yPi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="MSQ-cy-7ns"/>
+                            <constraint firstItem="EHt-V7-rAA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Mww-tY-35n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EHt-V7-rAA" secondAttribute="trailing" constant="10" id="Sec-Xd-AeJ"/>
                             <constraint firstItem="cm6-tv-yPi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="cG7-kx-Com"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cm6-tv-yPi" secondAttribute="bottom" constant="10" id="zF6-Jz-SdK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EHt-V7-rAA" secondAttribute="bottom" constant="10" id="ebr-ba-V5X"/>
+                            <constraint firstItem="EHt-V7-rAA" firstAttribute="top" secondItem="cm6-tv-yPi" secondAttribute="bottom" constant="25" id="q3v-dc-h2E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -34,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="98"/>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
 </document>
